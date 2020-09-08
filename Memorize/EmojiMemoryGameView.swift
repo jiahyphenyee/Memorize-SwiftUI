@@ -42,9 +42,9 @@ struct CardView: View {
     private func body(for size: CGSize) -> some View {
         if card.isFaceUp || !card.isMatched {
             ZStack {
-                Pie(startAngle: Angle.degrees(0-90), endAngle: Angle.degrees(110-90), clockwise: true)
-                    .padding(5).opacity(0.5)
-                Text("hello").font(Font.system(size: fontSize(for: size)))
+//                Pie(startAngle: Angle.degrees(0-90), endAngle: Angle.degrees(110-90), clockwise: true)
+//                    .padding(5).opacity(0.5)
+//                Text("hello").font(Font.system(size: fontSize(for: size)))
                 Circle()
             }
     //        .modifier(Cardify(isFaceUp: card.isFaceUp))     // using a ViewModifier without extension
